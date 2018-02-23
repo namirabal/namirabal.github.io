@@ -138,10 +138,14 @@ margin: 0 0 0 2%;
     }
 /* ---------GALLERY HERE --------*/ 
 
-.gallery{
+
+div.gallery{
   display: grid;
+  align-content: center;
   grid-template-columns: 1fr;
-}
+  grid-gap: 1em;
+  padding: .8rem 2%;
+    }
 
 /* ---------FOTTER HERE --------*/ 
 footer {

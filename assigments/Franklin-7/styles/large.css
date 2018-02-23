@@ -37,11 +37,12 @@ h3{
     margin-left: 350px;
     }
  /* ---------GALLERY HERE --------*/ 
-    .gallery {
+ div.gallery{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-}
-    
+  grid-gap: 1em;
+  padding: .8rem 2%;
+  }
  /* ---------FOOTER HERE --------*/ 
 .forecast{
    margin: 0 0 0 2%;

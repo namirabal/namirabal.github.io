@@ -41,7 +41,7 @@ h3{
     margin-left: 350px;
     }
 /* ---------GALLERY HERE --------*/ 
-    .gallery {
+ div.gallery {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
