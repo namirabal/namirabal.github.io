@@ -1,19 +1,25 @@
-<!DOCTYPE html>
-<html>
-<body>
-<script> 
-    var mydate = new Date(); 
-    var year = mydate.getYear( ); 
-    if (year < 1000) 
-    year += 1900 
-    var day = mydate.getDay(); 
-    var month = mydate.getMonth(); 
-    var daym = mydate.getDate(); 
-    if (daym<10) 
-    daym="0"+daym 
-    var dayarray=new Array("Sunday,","Monday,","Tuesday,","Wednesday,","Thursday,","Friday,","Saturday,")
-    var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December")
-    document.write("<font color='black' face='Georgia' style='font-size:10pt'>"+dayarray[day]+" "+daym+"  "+montharray[month]+" "+year+" ") 
-</script>
-</body>
-</html>
+var myDate = new Date();
+var weekday = new Array(7);
+weekday[0] =  "Sunday";
+weekday[1] = "Monday";
+weekday[2] = "Tuesday";
+weekday[3] = "Wednesday";
+weekday[4] = "Thursday";
+weekday[5] = "Friday";
+weekday[6] = "Saturday";
+ 
+var month = new Array();
+month[0] = "January";
+month[1] = "February";
+month[2] = "March";
+month[3] = "April";
+month[4] = "May";
+month[5] = "June";
+month[6] = "July";
+month[7] = "August";
+month[8] = "September";
+month[9] = "October";
+month[10] = "November";
+month[11] = "December";
+ 
+document.getElementById("currentdate").innerHTML = weekday[myDate.getDay()] + ", " + myDate.getDate() + " " + month[myDate.getMonth()] + " " + myDate.getFullYear();
