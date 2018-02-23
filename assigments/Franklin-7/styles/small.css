@@ -136,6 +136,13 @@ article figure.myimage img{
 article p{
 margin: 0 0 0 2%;
     }
+/* ---------GALLERY HERE --------*/ 
+
+.gallery{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 /* ---------FOTTER HERE --------*/ 
 footer {
     font-size: 15px;
