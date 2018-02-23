@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InfoWheater Franklin</title>
+  <meta name="author" content="Your Name Here">
+  <meta name="This is a web page of to know the wheater of the city Franklin" content="here will be iformation about 10 days forecast">
+  <!-- external style references in the proper cascading order -->    
+ <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/large.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/small.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+<body>
+<!-- HEADER HERE -->
+  <header class="clearfix">
+    <figure class="logo">
+        <img src="images/IWlogo0.jpg" alt="My logo" srcset="images/logo1.png 1x, imeges/logo2.png 2x, images/logo3.png 3x">
+    </figure> 
+    <h1>InfoWeather</h1>
+    <h2>We always keep you informed</h2>
+  </header>
+
+  <!-- site navigation use placeholder references -->
+  <nav class="clearfix">
+    <button class="hamburger" onclick="toggleHam()">&#9776; </button>
+    <ul id="navigation">
+    	<li><a href="#">Home</a></li>
+    	<li class="active"><a href="#">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
+    	<li><a href="#">Springfield</a></li>
+    	<li><a href="#">Storm Center</a></li>
+    	<li><a href="#">Gallery</a></li>
+    </ul>		
+  </nav>
+<!-- MAIN -->
+<main class="clearfix">
+     <figure class="hero">
+     <img src="images/franklin-original%20large.jpg" alt="city of Franklin" sizes="50vw" 
+          srcset="images/franklin-originalLarge.jpg 800w, 
+          images/franklin-originalMedium.jpg 500w, 
+          images/franklin-originalSmall.jpg 200w">
+     </figure>
+     <h2>The City of Franklin</h2>
+    
+    <section class="WheaterSum">
+      <h3>Weather Summary</h3>
+        <div class="current">
+        Sunny
+        <picture>
+            <img src="images/sunny.png" alt="sun"  width="90" height="90">
+        </picture>
+      </div>   
+      <div class="highlow">
+        <p>High: 90°F</p>  
+        <p>Low: 50°F</p>  
+      </div>
+      
+      <div class="conditions">
+        <p>Precipitation: 20%</p>  
+        <p>Wind Speed: 5 mph SW</p>  
+      </div>           
+    </section>
+    
+ <!-- 10 DAYS FORECAST-->
+    <section class="forecast">
+      <h3>10 Day Forecast</h3>
+      <table style="100%">
+	    <thead>
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+		</thead>
+        <tbody>  
+          <tr>
+            <td>89&deg;F</td>
+            <td>87&deg;F</td>
+            <td>78&deg;F</td>
+            <td>75&deg;F</td>
+            <td>72&deg;F</td>
+            <td>72&deg;F</td>
+            <td>79&deg;F</td>
+            <td>83&deg;F</td>
+            <td>85&deg;F</td>
+            <td>89&deg;F</td>
+          </tr>
+		</tbody>
+      </table>
+    </section>
+      
+  <article>
+      <h3>Franklin Breaks Record</h3>	
+        <figure class="myimage">
+            <img src="images/FranklinCity1.jpg" alt="FranC">
+        </figure>
+    <p class="town-article">
+The summer heatwave has passed and temperatures are cooling down. August is still too warm for a jacket, but you will need an umbrella as we anticipate sudden afternoon showers throughout the month. Don't get caught wearing suede or leather shoes in these sudden downpours. Choose something more water resistant.
+
+Evening temperatures are mild, so it's the perfect time to get out and enjoy all that London has to offer. Visit the Ferris wheel, stroll through the parks, or eat fish and chips at the local pub. As night falls the weather will cool down even more, so be sure to bring a wrap or shawl to cover up if you plan on being out after sunset.For a unique summer, experience visits one of the open air cinemas scattered around the city. Dress casually in your favorite jeans and bring a blanket. There are many classics and new releases to choose from.
+
+Fashion you may see this month include bright colored scarves, rosy colored glasses, and metallic bangles. Fun and casual meets industrial by combining jeans and t-shirt classics with heavy metal belts and jewelry.
+      </p>
+  </article>		  
+  </main>
+    
+  <footer>
+    <aside>
+      Contact information placeholder
+    </aside>
+    <p class="footer-bar">&copy;2017 All Rights Reserved | Site Title | <span id="currentdate">Current Date Placeholder</span></p>
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+
+</body>
+</html>

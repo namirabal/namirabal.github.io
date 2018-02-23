@@ -1,0 +1,94 @@
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    background-color: whitesmoke;
+    color: black;
+}
+
+header {
+    font-style: sans-serif;
+    background-color: #369CCC;
+    display: flex;
+    }
+header h1 {
+    font-style: sans-serif, bold;
+    font-size: 40px;
+    margin-top: 60px;
+    margin-left: 400px;
+    }
+header img {
+    float: none;
+    width: 200px;
+    height: 200px;
+    }
+header .subheading {}
+
+nav {
+    font-style: Sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #555;
+    border-top: 1px solid #555;
+      }
+nav button {
+    float: left;
+    margin-left: 10px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #369CCC;
+    }
+nav ul li {
+    float: left;
+    border-right: 3px solid #bbb;
+    margin-top: auto;
+}
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    padding: 8px;
+    background-color: #91DBFF;
+}
+nav ul li.active a {
+     background-color: #486E7F;
+}
+nav ul li a:hover {
+    background-color: #369CCC;
+}
+
+main {}
+main h2 {
+   font-style: sans-serif, bold;
+   font-size: 30px; 
+   color: #22617F;
+}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure img { width: 100%; }
+
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+  width: ???; /* fill the page in the small/phone view */
+  margin: ???;
+}
+
+footer {
+    font-size: 15px;
+    background-color: #369CCC;
+    text-align: center;
+}
+footer aside {}
+footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
