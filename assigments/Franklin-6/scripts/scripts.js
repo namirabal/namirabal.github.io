@@ -1,3 +1,3 @@
-function toggleHam() {
-    document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
+function toggleHam(){
+   document.getElementById("primaryNav").classList.toggle("hide");
 }
