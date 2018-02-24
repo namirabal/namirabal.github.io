@@ -1,5 +1,7 @@
-* { box-sizing: border-box;
-     }  /* This wildcard applies to all elements ensuring a box layout model */
+* { 
+    box-sizing: border-box;
+align-content: center;    
+}  /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
   font-size: 16px;
@@ -48,7 +50,7 @@ nav {
     border-bottom: 1px solid #555;
     border-top: 1px solid #555;
     width: 100%;
-      }
+    }
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -96,41 +98,39 @@ main figure.hero img { width: 100%; }
 
 /* ---------FORECATS HERE --------*/ 
 section.forecast { 
-    display: none; 
+  display:none; 
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 1em;
+  padding: .8rem 2%;
+  
     font-size: 25px;
+   }
+h3{
+    margin-left: 100px;
    }
 tr th{
     display: inline;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 0 0 0 2%;
     text-decoration: none;
-    padding: 8px;
     background-color: #91DBFF;
     border-right: 3px solid #555;
     }
 tr td {
-    display: inline;
-    padding: 8px 15px;
+   padding: 8px 15px;
     }
-h3{
-    margin-left: 350px;
-    }
-.forecast{
-   margin: 0 0 0 2%;}
+
   /* show the 10-day forecast with the medium view and up */
 
 /* ---------ARTICLE HERE --------*/ 
-article p{
-    margin: 0 0 0 2%;
-    }
 article figure.myimage{   
      width: 45%;}
             /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
   /* fill the page in the small/phone view */
 article figure.myimage img{
-    width: 60%;
-    margin: 0 0 0 2%;
+    width: 70%;
+    margin: 0 0 2% 0;
     float: right;
     }
 article p{
@@ -141,7 +141,6 @@ margin: 0 0 0 2%;
 
 div.gallery{
   display: grid;
-  align-content: center;
   grid-template-columns: 1fr;
   grid-gap: 1em;
   padding: .8rem 2%;
