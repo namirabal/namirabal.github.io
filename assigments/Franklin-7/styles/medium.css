@@ -40,17 +40,33 @@ tr td {
 h3{
     margin-left: 350px;
     }
+/* ---------ARTICLE HERE --------*/ 
+            /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+  /* fill the page in the small/phone view */
+article figure.myimage img{
+    margin: 0 0 2% 0;
+    float: right;
+    }
+article p{
+margin: 0 0 0 2%;
+    }
+article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
+}
 /* ---------GALLERY HERE --------*/ 
- div.gallery {
+
+
+div.gallery{
   display: grid;
-  grid-template-columns: 1fr 1fr;
-}
+  grid-template-columns: 1fr;
+  grid-gap: 1em;
+  padding: .8rem 2%;
+    }
 
-/* ---------footer HERE --------*/
-    .forecast{
-   margin: 0 0 0 2%;
-    }  /* show the 10-day forecast with the medium view and up */
-  
-  article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
-
+/* ---------FOTTER HERE --------*/ 
+footer {
+    font-size: 15px;
+    background-color: #369CCC;
+    text-align: center;
 }
+footer aside {}
+footer>p {} /* This structure refers to p elements that are direct children of the footer element */
