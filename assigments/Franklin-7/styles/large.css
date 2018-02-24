@@ -54,7 +54,7 @@ max-width: 100%;
 
 div.gallery{
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1em;
   padding: .8rem 2%;
     }

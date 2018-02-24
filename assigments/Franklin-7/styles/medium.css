@@ -57,7 +57,7 @@ article p.town-article img { width: 62.666%; float:right; }  /* responsive image
 
 div.gallery{
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 1em;
   padding: .8rem 2%;
     }

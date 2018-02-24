@@ -91,19 +91,22 @@ main h2 {
 main figure.hero { width:96%; margin: 0 0 .2rem 2%;  }
 main figure.hero img { width: 100%; }
 
+section div.windchill {margin: 1rem;}
+.form {background-color:#bbb; padding: 1rem; border:1px solid #444;}
+div {background-color:#eee; padding: 1rem; border:1px solid #444;}
+#aNum {border:1px solid #bbeedd; background-color:#aaffcc; text-align:center;}
+
 .WheaterSum{
     padding: 0 2%;
     font-size: 24px;
     }
-
-/* ---------FORECATS HERE --------*/ 
+/* ---------10 days FORECASt HERE --------*/ 
 section.forecast { 
   display:none; 
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 1em;
   padding: .8rem 2%;
-  
-    font-size: 25px;
+  font-size: 25px;
    }
 h3{
     margin-left: 100px;
@@ -137,20 +140,13 @@ article p{
 margin: 0 0 0 2%;
     }
 /* ---------GALLERY HERE --------*/ 
-
-
 div.gallery{
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1em;
   padding: .8rem 2%;
     }
-section, div {margin: 1rem;}
-.form {background-color:#bbb; padding: 1rem; border:1px solid #444;}
-div {background-color:#eee; padding: 1rem; border:1px solid #444;}
-#aNum {border:1px solid #bbeedd; background-color:#aaffcc; text-align:center;}
-
-/* ---------FOTTER HERE --------*/ 
+/* ---------FOOTER HERE --------*/ 
 footer {
     font-size: 15px;
     background-color: #369CCC;
