@@ -63,7 +63,7 @@ nav ul li {
     margin-top: auto;
 }
 nav ul li a {
-    display:block;
+    display:flex;
     padding: 12px 14px;
     text-decoration: none;
     color: white;
