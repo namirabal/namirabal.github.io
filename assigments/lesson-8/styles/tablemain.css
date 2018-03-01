@@ -1,0 +1,47 @@
+        main {
+            font-family: 'Ubuntu', sans-serif;
+        }
+        table {
+            border-collapse: collapse; 
+            letter-spacing: 0.3px; 
+            box-shadow: 9px 9px 14px #628ca6;
+            width: 30%;
+        }
+        th, td {
+            border: 1px solid #A9A9A9; 
+            padding: 9px;
+        }
+        td {
+            text-align: center;
+        }
+        thead {
+            font-size: 30px;
+        }
+        thead tr {
+            background-color: #7fb9c2;
+        }
+        tbody {
+            font-weight: 400;
+        }
+        tbody th {
+            color: white;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: #e7f0ed;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #e7ffed;
+        }
+        tbody tr:first-child {
+            background-color: #628ca6;
+        }
+        .novGoal {
+            background-color: #628ca6; 
+            color: white;
+        }
+        tfoot {
+            font-size: 12px;
+        }
+        tfoot tr {
+            background-color: #7fb9c2;
+        }
