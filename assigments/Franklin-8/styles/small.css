@@ -88,6 +88,10 @@ main h2 {
    color: #22617F;
    padding: 0 2%;
 }
+.thanksp{
+    padding: 0 2%;
+    font-size: 24px;
+}
 main figure.hero { width:96%; margin: 0 0 .2rem 2%;  }
 main figure.hero img { width: 100%; }
 
