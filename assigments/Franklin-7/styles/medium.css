@@ -51,16 +51,13 @@ article p{
 margin: 0 0 0 2%;
     }
 article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
-}
+
 /* ---------GALLERY HERE --------*/ 
-
-
-div.gallery{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 1em;
-  padding: .8rem 2%;
-    }
+div.weatherGallery {
+        display: grid;
+  		grid-template-columns: repeat(2, 1fr);
+		grid-gap:2%;
+	}
 
 /* ---------FOTTER HERE --------*/ 
 footer {
@@ -70,3 +67,4 @@ footer {
 }
 footer aside {}
 footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+}

@@ -141,12 +141,14 @@ article p{
 margin: 0 0 0 2%;
     }
 /* ---------GALLERY HERE --------*/ 
-div.gallery{
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 1em;
-  padding: .8rem 2%;
-    }
+div.weatherGallery {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+	padding: 0 .4em;
+	}
+div.weatherGallery figure img {
+    width: 100%;
+}
 /* ---------FOOTER HERE --------*/ 
 footer {
     font-size: 15px;

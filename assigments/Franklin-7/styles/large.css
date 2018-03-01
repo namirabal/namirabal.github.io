@@ -50,14 +50,10 @@ margin: 0 0 0 2%;
 max-width: 100%;
     }
 /* ---------GALLERY HERE --------*/ 
-
-
-div.gallery{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 1em;
-  padding: .8rem 2%;
-    }
+div.weatherGallery {
+    display: grid;
+  		grid-template-columns: repeat(3, 1fr);
+	}
 
 /* ---------FOTTER HERE --------*/ 
 footer {
@@ -66,4 +62,5 @@ footer {
     text-align: center;
 }
 footer aside {}
-footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+footer p {} /* This structure refers to p elements that are direct children of the footer element */
+}
