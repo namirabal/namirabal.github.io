@@ -39,33 +39,32 @@
     <!-- MAIN -->
     <main>
     <h2>Storm Center</h2>
-    
-    <form action="thanks.html" method="post" enctype="multipart/form-data" name="stormform" id="stormcenter">
+        <form action="thanks.html" method="post" enctype="multipart/form-data" name="stormform" id="stormcenter">
     <fieldset>
         <legend>
             <span>Personal Information</span>    
         </legend>  
         <label>
             <span>
-            Full Name:<br> 
+            Full Name :<br> 
             <input name="fullname" type="text" value placeholder="Full Name" pattern="[a-zA-Z -._]{3,99}" required><br>
             </span>
         </label>
         <label>
             <span>
-            Phone number:<br>
-            <input name="phonenumber" type="tel" value placeholder="you@email.com" pattern="[0-9]{10,20}" required><br>
+            Phone number :<br>
+            <input name="phonenumber" type="tel" value placeholder="5524871548" pattern="[0-9]{10,20}" required><br>
             </span>
         </label>
         <label>
             <span>
-            Email:<br>
-            <input name="phone" type="tel" value="5552457896" required><br>
+            Email :<br>
+            <input name="phone" type="tel" value placeholder="you@email.com" required><br>
             </span>
         </label>
         <label>
             <span>
-            Zip Code: <br>
+            Zip Code : <br>
             <input name="zip" type="number" value placeholder="7777" required><br>
             </span>
         </label>
@@ -76,13 +75,13 @@
     </legend> 
         <label>
             <span>
-                Storm Date:<br>
+                Storm Date :<br>
                 <input name="stormdate" type="date" value required><br>
             </span>
         </label>
     <label>
         <span>
-         Storm Type:<br>
+         Storm Type :<br>
             <input name="stormtype" type="text" value list="stormtype">
             <datalist id="stormtype">
                 <option value="Flash Flood"></option>
@@ -95,7 +94,7 @@
         </span>
     </label>
     <label>
-        <span>Storm Severity (1 Low-10 High): <br>
+        <span>Storm Severity (1 Low - 10 High): <br>
           <input name="stormseverity" type="range" value="5" min="1" max="10" step="1" oninput="adjustrating(this.value)" onchange="adjustrating(this.value)" class="rating">
           <span id="rating" class="rating">5</span><br>
         </span>
