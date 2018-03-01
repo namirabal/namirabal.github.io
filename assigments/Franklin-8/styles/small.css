@@ -184,15 +184,14 @@ label{
     }
 input{
     display: block;
-    padding-bottom: .75rem;
-}
+  }
 textarea{
     display: block;
     width: 60%;
 }
 span.rating, input.rating{
     display: inline-block;
-    margin-right: 1rem;
+    margin-right: .6rem;
     align-self: center;
 }
 input.rating{
