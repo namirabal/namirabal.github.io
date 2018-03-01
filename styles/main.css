@@ -9,11 +9,19 @@ body {
     line-height: 32px;
     font-family: fantasy;
     color: black;
+    background-color: aliceblue;
 }
 
 h1 {
     font-size: 40px;
     color: #FF8F00;
+    font-family: 'Euphoria Script', cursive;
+    font-size: 1.75em;
+    text-align: left;
+    word-wrap: normal;
+    margin-left: .5em;
+    font-weight: normal;
+    text-align: center;
 }
 
 h2 {
@@ -32,12 +40,15 @@ header, footer, footer a {
     text-align: center;
     background-color: #0E91B2;
     color: black;
+   border-radius: 13px;
 }
 
 header img {
-    width: 400px;
+    width: 200px;
     height: auto;
     float: right;
+    border-radius: 20px;
+    margin: .75em;
 }
 
 footer {

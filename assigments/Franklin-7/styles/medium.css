@@ -38,17 +38,22 @@ tr td {
     padding: 8px 15px;
     }
 h3{
-    margin-left: 350px;
+    text-align: center;
     }
+    .summary {
+    float: left;
+    margin: 0;
+   }
 /* ---------ARTICLE HERE --------*/ 
             /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
   /* fill the page in the small/phone view */
 article figure.myimage img{
-    margin: 0 0 2% 0;
+   width: 62.666%;
     float: right;
+    margin-left: 2rem;
     }
 article p{
-margin: 0 0 0 2%;
+ margin-left: 2%;
     }
 article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
 

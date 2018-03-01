@@ -13,7 +13,7 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
     background-color: whitesmoke;
     color: black;
-    max-width: 100%;
+    align-content: center;
    }
 
 /* ---------HEADER HERE --------*/ 
@@ -95,22 +95,40 @@ section div.windchill {margin: 1rem;}
 .form {background-color:#bbb; padding: 1rem; border:1px solid #444;}
 div {background-color:#eee; padding: 1rem; border:1px solid #444;}
 #aNum {border:1px solid #bbeedd; background-color:#aaffcc; text-align:center;}
-
+/*------Wheather SUmmary-----*/
 .WheaterSum{
     padding: 0 2%;
     font-size: 24px;
     }
+.summary {
+    float: left;
+    margin-left: 10%;
+}
+div.current{
+   text-align: center;
+}
+div>p{
+    display: inline-grid;
+    margin: .5rem;
+    width: 45%;
+    text-align: center;
+}
 /* ---------10 days FORECASt HERE --------*/ 
-section.forecast { 
-  display:none; 
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 1em;
-  padding: .8rem 2%;
-  font-size: 25px;
-   }
-h3{
-    margin-left: 100px;
-   }
+table {
+    border-collapse: collapse;
+    border: .1rem solid #000000;
+    width: 96%;}
+section.forecast {
+    display: none;
+    padding-top: 1rem;
+    clear: both;
+    width: 90%;
+    margin-left: 5%
+}
+h3 {
+    font-size: 1.75rem;
+    text-align: center;
+}
 tr th{
     display: inline;
     color: white;
@@ -128,17 +146,19 @@ tr td {
   /* show the 10-day forecast with the medium view and up */
 
 /* ---------ARTICLE HERE --------*/ 
-article figure.myimage{   
-     width: 45%;}
             /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
   /* fill the page in the small/phone view */
 article figure.myimage img{
-    width: 70%;
-    margin: 0 0 2% 0;
-    float: right;
+    width: 96%;
+    margin: .35rem 2%;
     }
 article p{
-margin: 0 0 0 2%;
+display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    margin-left: 2%;
     }
 /* ---------GALLERY HERE --------*/ 
 div.weatherGallery {
