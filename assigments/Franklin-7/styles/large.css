@@ -8,7 +8,7 @@
     margin-left: 2%;
         }
     nav ul li{
-        float: left;
+        display: flex;
         }
     nav ul li a{
         border: none;

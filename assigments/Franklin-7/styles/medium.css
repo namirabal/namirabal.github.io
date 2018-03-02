@@ -11,6 +11,8 @@
     
     nav ul li{
         float: left;
+        display: flex;
+        flex-direction: row;
         }
     
     nav ul li a{
