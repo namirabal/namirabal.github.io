@@ -1,7 +1,7 @@
  var header = document.querySelector('header');
         var section = document.querySelector('section');
 
-        var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';/*to store the URL of the JSON we want to retrieve in a variable*/
+        var requestURL = '//byui-cit230.github.io/weather/data/towndata.json';/*to store the URL of the JSON we want to retrieve in a variable*/
         var request = new XMLHttpRequest();/*To create a request*/
         request.open('GET', requestURL);/*to open a new request using the open() method*/
 
