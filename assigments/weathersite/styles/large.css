@@ -18,6 +18,9 @@
 /* ---------10 DAYS HERE --------*/   
 table {
     font-size: 2rem;
+    border-collapse: separate;
+    margin-left: auto;
+    margin-right: auto;
 }
     section.forecast { display: inline; 
     font-size: 25px;
@@ -26,7 +29,7 @@ tr th{
     display: inline;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 20px 16px;
     text-decoration: none;
     padding: 8px;
     background-color: #91DBFF;
