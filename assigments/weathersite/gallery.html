@@ -69,15 +69,33 @@
 
     <!-- footer HERE -->
     <footer>
-        <aside>
-          Contact information placeholder
-        </aside>
+    <aside class="address">
+        <address>Contact Information:<br>
+            
+            Infoweather<br>
+            123 Street.<br>
+            Córdoba,Argentina<br>
+            email@infoW.com<br>
+        </address>
+    </aside>
         <p class="footer-bar">&copy;2017 All Rights Reserved | Site Title | <span id="currentdate">Current Date Placeholder</span></p>
-      </footer>
+    <aside class="credit">
+        <p>Weather data from:</p>
+            <a href="https://www.wunderground.com/">
+                <picture id="credit">
+                    <source media="(min-width: 37.5em)" srcset="images/wundergroundLogo.png">
+                    <source media="(max-width: 37.4em)" srcset="images/wundergroundLogo.png">
+                    <img src="images/wundergroundLogo.png" alt="Wunderground Logo">
+                </picture>
+            </a>
+    </aside>
+</footer>
         <script src="scripts/scripts.js"></script>
-      <script src="scripts/currentdate.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/windchill.js"></script>
+    <script src="script/Fwu-weather.js"></script>
 </body>
-    <script>
+<script>
 var urlString = document.location.href;
 var urlArray = urlString.split('/');
 var pageHREF = urlArray[urlArray.length-1];
