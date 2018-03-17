@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InfoWheater Franklin</title>
+  <meta name="author" content="Your Name Here">
+  <meta name="This is a web page of to know the wheater of the city Franklin" content="here will be iformation about 10 days forecast">
+  <!-- external style references in the proper cascading order -->    
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">  <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+    <link href="styles/small.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+    <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+    <link href="styles/large.css" rel="stylesheet">  <!-- large/wide/desktop views --> 
+</head>
+
+<body>
+    <!-- HEADER HERE -->
+      <header class="clearfix">
+        <figure class="logo">
+            <img src="images/IWlogo0.jpg" alt="My logo" srcset="images/logo1.png 1x, imeges/logo2.png 2x, images/logo3.png 3x">
+        </figure> 
+        <h1>InfoWeather</h1>
+        <h2>We always keep you informed</h2>
+      </header>
+
+      <!-- NAVIGATION HERE -->
+      <nav class="clearfix">
+        <button onclick="toggleHam()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li><a href="https://namirabal.github.io/assigments/Franklin-8/index.html">Franklin</a></li>
+            <li><a href="#">Greenville</a></li>
+            <li><a href="#">Springfield</a></li>
+            <li class="active"><a href="https://namirabal.github.io/assigments/Franklin-8/stormcenter.html">Storm Center</a></li>
+            <li><a href="https://namirabal.github.io/assigments/Franklin-8/gallery.html">Gallery</a></li>
+        </ul>		
+      </nav>
+    <!-- MAIN -->
+    <main>
+    <h2>Storm Center</h2>
+        <form action="thanks.html" target="_blank" method="post" enctype="multipart/form-data" name="stormform" id="stormcenter">
+    <fieldset>
+        <legend>
+            <span>Personal Information</span>    
+        </legend>  
+        <label>
+            <span>
+            Full Name :<br> 
+            <input name="fullname" type="text" value placeholder="Full Name" pattern="[a-zA-Z -._]{3,99}" required><br>
+            </span>
+        </label>
+        <label>
+            <span>
+            Email :<br>
+            <input name="phone" type="tel" value placeholder="you@email.com" required><br>
+            </span>
+        </label>
+        <label>
+            <span>
+            Phone number :<br>
+            <input name="phonenumber" type="tel" value placeholder="5524871548" pattern="[0-9]{10,20}" required><br>
+            </span>
+        </label>
+        <label>
+            <span>
+            Zip Code : <br>
+            <input name="zip" type="number" value placeholder="7777" required><br>
+            </span>
+        </label>
+    </fieldset>
+    <fieldset>
+    <legend>
+        <span>Storm Information</span>
+    </legend> 
+        <label>
+            <span>
+                Storm Date :<br>
+                <input name="stormdate" type="date" value required><br>
+            </span>
+        </label>
+    <label>
+        <span>
+         Storm Type :<br>
+            <input name="stormtype" type="text" value list="stormtype">
+            <datalist id="stormtype">
+                <option value="Flash Flood"></option>
+                <option value="Hail"></option>
+                <option value="Hurricane"></option>
+                <option value="Thunderstorm"></option>
+                <option value="Tornado"></option>
+                <option value="Blizzard"></option>
+            </datalist><br>
+        </span>
+    </label>
+    <label>
+        <span>Storm Severity (1 Low - 10 High): <br>
+          <input name="stormseverity" type="range" value="5" min="1" max="10" step="1" oninput="adjustrating(this.value)" onchange="adjustrating(this.value)" class="rating">
+          <span id="rating" class="rating">5</span>
+        </span>
+    </label><br>
+    <label>
+        <span>
+         Storm Region:<br>
+          <select name="region">
+                <option selected disabled>Select Region</option>
+                <option value="franklin">Franklin</option>
+                <option value="greenville">Greenville</option>
+                <option value="springfield">Springfield</option>
+          </select><br>
+        </span>
+    </label><br>
+    <label>Are You in Danger?<br></label>
+        <span class="radio">
+            <input name="userdanger" type="radio" value="yes" required class="radio">Yes<br>
+            <input name="userdanger" type="radio" value="no" required class="radio">Maybe<br>
+            <input name="userdanger" type="radio" value="notsure" required class="radio">No<br>
+        </span>
+                <label><span>Additional Information:<br> <textarea name="additionalinfo" rows="4" cols="50"></textarea></span></label>
+            </fieldset>
+            <input type="submit" value="Submit" class="submitbutton">
+    </form>
+</main>
+
+      <footer>
+        <aside>
+          Contact information placeholder
+        </aside>
+        <p class="footer-bar">&copy;2017 All Rights Reserved | Site Title | <span id="currentdate">Current Date Placeholder</span></p>
+      </footer>
+        <script src="scripts/scripts.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/windchill.js"></script>
+        <script src="scripts/form.js"></script>
+</body>
+</html>
