@@ -1,21 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Alcove Digital Systems</title>
 	<link rel="stylesheet" href="css/style.css">
 	<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script>
-	$(function(){
-		// All jQuery code goes here
-        
-	})
+        $(function(){
+            // jQuery Code goes here
+            //$('#alcoveLogo').css('opacity', 0.4);
+            
+            //$('.servicesBtn').css('color', '#FFF');
+            
+            //$('button').css('border', '1px solid red');
+            
+            //$('h2').css('border', '1px solid red');
+            
+            //$('input[name="nameVal"]').css('border', '1px solid red');
+            
+            //$('input[name!="phoneNum"]').css('border', '1px solid red');
+            
+            //$('input[name*="Num"]').css('border', '1px solid red');
+            
+            //$('input[name$="Val]').css('border', '1px solid red');
+            
+            //$('#alcoveLogo').next().css('background-color', 'rgb(255, 0, 0, 0.2)');
+            
+            //$('.box1').nextAll().css('background-color', 'rgb(255, 0, 0, 0.2)');
+            
+            //$('.header').children().css('background-color', 'rgb(255, 0, 0, 0.2)');
+            
+            //$(".navigation > li:eq(2)").parent().css('opacity', '0.3');
+            
+            $('.servicesBtn').closest('div').css('background-color', 'rgb(255, 0, 0, 0.2)');
+        })
 	</script>
 </head>
+
 <body>
-<!-- Master Container Div -->
+	<!-- Master Container Div -->
 	<div class="container">
-	<!-- Header Div containing the Logo & Navigation Links -->
+		<!-- Header Div containing the Logo & Navigation Links -->
 		<div class="header">
 			<div class="logo" id="alcoveLogo"></div>
 			<div class="navbar">
@@ -38,23 +64,37 @@
 					<img class="ReqAQuoteImg" src="img/quote.png" alt="">
 					<br>
 					<div class="FormFieldHolder">
-						<div class="labelHolder"><label>Full Name</label></div>
-						<div class="FieldHolder"><input type="text"></div>
+						<div class="labelHolder">
+							<label>Full Name</label>
+						</div>
+						<div class="FieldHolder">
+							<input type="text" name="nameVal">
+						</div>
 					</div>
 
 					<div class="FormFieldHolder">
-						<div class="labelHolder"><label>E-Mail</label></div>
-						<div class="FieldHolder"><input type="text"></div>
+						<div class="labelHolder">
+							<label>E-Mail</label>
+						</div>
+						<div class="FieldHolder">
+							<input type="text" name="emailVal">
+						</div>
 					</div>
 
 					<div class="FormFieldHolder">
-						<div class="labelHolder"><label>Phone</label></div>
-						<div class="FieldHolder"><input type="text"></div>
+						<div class="labelHolder">
+							<label>Phone</label>
+						</div>
+						<div class="FieldHolder">
+							<input type="text" name="phoneNum">
+						</div>
 					</div>
 
 					<div class="FormFieldHolder">
 						<div class="labelHolder"></div>
-						<div class="FieldHolder"><button id="ReqAQuoteBtn">Request A Quote !</button></div>
+						<div class="FieldHolder">
+							<button id="ReqAQuoteBtn" data-code="028">Request A Quote !</button>
+						</div>
 					</div>
 				</form>
 			</div>
@@ -64,7 +104,12 @@
 				<div class="boxes box1">
 					<h2>The Values that Drive Us</h2>
 					<hr>
-					<p>Alcove adopts various driving factors of corporate philosophy in our day to day activities that ultimately lead to success. We strive to achieve our value guidelines by incorporating our principles into each relationship with our clients to obtain long lasting customers. <br><br>Our core values : <br><br></p>
+					<p>Alcove adopts various driving factors of corporate philosophy in our day to day activities that ultimately lead to success. We strive to achieve our value guidelines by incorporating our principles into each relationship with our clients to obtain long lasting customers.
+						<br>
+						<br>Our core values :
+						<br>
+						<br>
+					</p>
 					<ul>
 						<li>Innovative Ideas</li>
 						<li>Ownership</li>
@@ -77,7 +122,10 @@
 				<div class="boxes box2">
 					<h2>What we do</h2>
 					<hr>
-					<p>Innovation is the key to success. Alcove's expertise covers a wide range of services, technologies, tools and platforms. Here are some of the things we're really good at :<br><br></p>
+					<p>Innovation is the key to success. Alcove's expertise covers a wide range of services, technologies, tools and platforms. Here are some of the things we're really good at :
+						<br>
+						<br>
+					</p>
 					<ul>
 						<li><a href="#" class="servicesBtn">Web Design & Development</a></li>
 						<li><a href="#" class="servicesBtn">Web Application Development</a></li>
@@ -103,8 +151,9 @@
 		</div>
 
 		<div class="footer">
-            <h5>© Alcove Digital Systems | <a href="#">Terms of Use</a> | <a href="animatedmenu.htm">Animated Menu</a> | <a href="dropdownmenu.html">Drop Down Menu</a> | <a href="fruitbasket.html">Fruit Basket</a> | <a href="inserthtml.html">Insert HTML</a> | <a href="togglebutton.html">Toggle Button</a></h5>
-        </div>
+			<h5>© Alcove Digital Systems | <a href="#">Terms of Use</a></h5>
+		</div>
 	</div>
 </body>
+
 </html>
