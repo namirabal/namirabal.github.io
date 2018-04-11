@@ -1,0 +1,74 @@
+@media only screen and (min-width: 64em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+  /*-------HEADER HERE----------*/
+    header img {
+    width: auto;
+    height: 250px;
+    float: left;
+    margin: 2% 0;
+    margin-left: 5%;
+    }
+    
+    /* ---------NAV HERE --------*/ 
+    nav button { display:none; }  /* hamburger button does not need to be shown */
+    nav ul#navigation{display: block;}
+   
+    nav ul{
+    margin-left: 2%;
+        }
+    nav ul li{
+        float: left;
+        }
+    nav ul li a{
+        border: none;
+        border-right: 1px solid rgba(0,0,0,0.3);
+        padding: .6rem 1rem;
+        }
+/*----------- MAIN -----------*/
+    .first, .second, .third {
+	width: 26.6%;
+	float: left;
+	background-color: #284472;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 2% 3%;
+	margin-top: 2%;
+    margin-left: 5%;
+}
+ .topcontent {
+	background-color: #21AEE8;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 3% 3%;
+	margin: 2% 3% 4%;
+	color: aliceblue;
+    display:block;
+}
+    .guides {
+    height: 600px;
+    background-color: #284472;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 13px;
+    padding: 2% 1% 1% 1;
+    margin-top: 5%;
+    color: aliceblue;
+}
+
+/* ---------GALLERY HERE --------*/ 
+div.weatherGallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+	}
+
+/* ---------FOTTER HERE --------*/ 
+footer {
+    font-size: 15px;
+    background-color: #AFE818;
+    text-align: center;
+}
+footer aside {}
+footer p {} /* This structure refers to p elements that are direct children of the footer element */
+}

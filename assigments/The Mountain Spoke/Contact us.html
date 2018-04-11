@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mountain Bike</title>
+  <meta name="Natasha Mirabal" content="BYU-I Online">
+  <meta name="This is a web page of to know the wheater of the city Franklin" content="here will be iformation about 10 days forecast">
+  <!-- external style references in the proper cascading order -->   
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">  <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+    <link href="styles/small.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+    <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+    <link href="styles/large.css" rel="stylesheet">  <!-- large/wide/desktop views -->
+    <link rel="icon" href="images/LOGO.jpg" type="image/png"> 
+<style>
+html{ 
+    background: url(images/background.jpg) no-repeat center fixed;
+    background-size: cover;
+}    
+</style>
+</head>
+    
+<body>
+    <!-- HEADER HERE -->
+      <header class="clearfix">
+        <figure class="logo">
+            <img src="images/LOGO.jpg" alt="My logo">
+        </figure> 
+    </header>
+
+      <!-- NAVIGATION HERE -->
+      <nav class="clearfix">
+        <button onclick="toggleHam()">&#9776;</button>
+        <ul id="mainmenu" class="hide">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Adventures</a></li>
+            <li class="active"><a href="#">Our Services</a></li>
+            <li><a href="#">Mountain Guide</a></li>
+            <li><a href="#">Visitor Experience</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>		
+      </nav>
+    <!-- MAIN -->
+    <main>
+   <div class="maincontent">
+    <div class="content">
+        <article class="topcontent">
+            <header>
+                <h2>Contact Us</h2>
+            </header>
+                <p class="descrip">Questions? Comments? Concerns? Fire away we're happy to help!
+                </p>
+        </article>  
+    </div>
+</div>
+
+    
+ <div class="contact">
+    <article class="maincontact">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d19540.2815747872!2d-64.19071201001125!3d-31.42119740357848!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1523459174909" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        
+                    <p class="callus">Find us at our location here!<br>Av. Colon and General Paz, Córdoba, ARG</p>
+                    <p>For further questions please call us at (352) 544-6656 or send us an email!</p>
+                
+     <div class="commbox">      
+                <textarea class="box" name="comments" maxlength="1000" cols="40" rows="12"></textarea>  
+                <p style="text-align: center">
+                <input type="submit" value="submit"></p>
+     </div>
+    </article>    
+ </div>
+
+</main>
+
+ <!-- FOOTER HERE -->	  
+<footer>
+    <aside class="address">
+        <address>Contact Information:<br>
+            
+            The Mountain Spoke<br>
+            123 Street.<br>
+            Córdoba,Argentina<br>
+            email@TMS.com<br>
+        </address>
+    </aside>
+        <p class="footer-bar">&copy;2017 All Rights Reserved | Site Title | <span id="currentdate">Current Date Placeholder</span></p>
+            
+</footer>
+        <script src="script/scripts.js"></script>
+        <script src="script/currentdate.js"></script>
+</body>
+    <script>
+var urlString = document.location.href;
+var urlArray = urlString.split('/');
+var pageHREF = urlArray[urlArray.length-1];
+    
+if (pageHREF !=="") {
+    var menu = document.querySelectorAll('ul#mainmenu li a');
+var i;
+
+for(i=0; i<menu.length; i++){
+    var currentURL=(menu[i].getAttribute("href"));
+    menu[i].parentNode.className="";
+    if(currentURL===pageHREF){
+        menu[i].parentNode.className="active";
+    }
+}
+}
+</script>
+</html>

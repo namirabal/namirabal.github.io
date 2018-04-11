@@ -1,0 +1,64 @@
+@media only screen and (min-width: 35em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+  
+    /* hamburger button does not need to be shown */
+    /*--------------HEADER HERE--------*/
+    header img {
+    width: auto;
+    height: 180px;
+    float: left;
+    margin: 2% 0;
+    }
+/* ---------NAV HERE --------*/
+    
+    nav button {display: none;}
+    
+    nav ul.hide {display: block;}
+   
+    nav ul {margin-left: 2%;}
+    
+    nav ul li{
+        float: left;
+        }
+    
+    nav ul li a{
+        border: none;
+        border-right: 1px solid rgba(0,0,0,0.3);
+        padding: .8rem 1rem;
+        }
+ 
+
+/* ---------GALLERY HERE --------*/ 
+div.weatherGallery {
+        display: grid;
+  		grid-template-columns: repeat(2, 1fr);
+		grid-gap:2%;
+	}
+    /*-------------Images---------*/
+    .first, .second, .third {
+	width: 26.6%;
+	float: left;
+	background-color: #284472;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 2% 3%;
+	margin-top: 2%;
+    margin-left: 5%;
+}
+    .contact iframe {
+    float: left;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin-top: 2%;
+}
+/* ---------FOTTER HERE --------*/ 
+footer {
+    font-size: 15px;
+    background-color: #AFE818;
+    text-align: center;
+}
+footer aside {}
+footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+}

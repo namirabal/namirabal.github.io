@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mountain Bike</title>
+  <meta name="Natasha Mirabal" content="BYU-I Online">
+  <meta name="This is a web page of to know the wheater of the city Franklin" content="here will be iformation about 10 days forecast">
+  <!-- external style references in the proper cascading order -->   
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">  <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+    <link href="styles/small.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+    <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+    <link href="styles/large.css" rel="stylesheet">  <!-- large/wide/desktop views -->
+    <link rel="icon" href="images/LOGO.jpg" type="image/png"> 
+<style>
+html{ 
+     background: url(images/background.jpg) no-repeat center fixed;
+    background-size: cover;
+  }    
+</style>
+</head>
+    
+<body>
+    <!-- HEADER HERE -->
+      <header class="clearfix">
+        <figure class="logo">
+            <img src="images/LOGO.jpg" alt="My logo">
+        </figure> 
+    </header>
+
+      <!-- NAVIGATION HERE -->
+      <nav class="clearfix">
+        <button onclick="toggleHam()">&#9776;</button>
+        <ul id="mainmenu" class="hide">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Adventures</a></li>
+            <li class="active"><a href="#">Our Services</a></li>
+            <li><a href="#">Mountain Guide</a></li>
+            <li><a href="#">Visitor Experience</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>		
+      </nav>
+    <!-- MAIN -->
+    <div class="maincontent">
+    <div class="content">
+        <article class="topcontent">
+            <header>
+                <h2>Mountain Bike Guides</h2>
+            </header>
+            <content>
+            <p>Never you fear, your guide is here!
+                </p>
+                <p class="descrip">Every trusty guide has been certified and trained to tackle these rapids. You’ll have nothing to fear as they show you the best ways to tackle the river and bring out the most fun in the adventure. Each guide has received first aid medical training and is CPR certified so each experience is just as fun as it is safe! 
+                </p>
+            </content>
+        </article>  
+    </div>
+</div>
+    
+<div class="guides">
+    <article class="Lucontent">
+            <header>
+                <h2>Lucia</h2>
+                <img class="guidephoto" src="images/G1.jpg" alt="image">
+            </header>
+            <content>
+                <p>Fun is Lucia's middle name! (actually it's Marie) She's a natural on water as much as she is on land and loves the trill of fast turbulent rapids. Don’t let her fool you, this girl’s got arms of steel, she can handle anything that’s thrown at her. She hugged me once and I felt safe. Sam taught swimming lessons and was a life guard for about five years before becoming a guide for whitewater rafting.</p>
+                <ul>
+                    <li>5 years experience</li>
+                    <li>Email Address- SamMiller49@gmail.com</li>
+                    <li>Can hold her breath for 5 minutes and 18 seconds</li>
+                </ul>
+            </content>
+    </article>       
+</div>
+    
+<div class="guides">
+    <article class="Maticontent">
+            <header>
+                <h2>Matias</h2>
+                <img class="guidephoto" src="images/G2.jpg" alt="image">
+            </header>
+            <content>
+                <p>Matias has been swimming in the water longer than he could walk. He's spent years whitewater rafting as far as the Rhein, Switzerland and Noce River, Italy. This tough guide can show you the smoothest routes on the river as well as maneuver though unruly rapids as if he were Poseidon himself. I mean look at him, that’s the angelic smile of someone you can trust.</p>
+                <ul>
+                    <li>12 years experience</li>
+                    <li>Email Address- IronMatt@gmail.com</li>
+                    <li>Great with kids</li>
+                </ul>
+            </content>
+    </article>         
+</div>
+    
+<div class="guides">
+    <article class="Marcoscontent">
+            <header>
+                <h2>Marcos</h2>
+                <img class="guidephoto" src="images/G3.jpg" weight="" alt="image">
+            </header>
+            <content>
+                    <p>Marcos "The Rock" Johnson has finally realized his life-long dream of becoming a whitewater rafting guide. He's trained long and hard, honed his skills just so he can guide you through the river. The river may be tough, but Dwayne is his own force of nature.</p>
+                <ul>
+                    <li>8 years experience</li>
+                    <li>Email Address- TheRockisPleased@gmail.com</li>
+                    <li>Ask him to do the eyebrow thing</li>
+                </ul>
+            </content>
+    </article>    
+        
+</div>
+    
+    
+    
+    <!-- FOOTER HERE -->	  
+<footer>
+    <aside class="address">
+        <address>Contact Information:<br>
+            
+            The Mountain Spoke<br>
+            123 Street.<br>
+            Córdoba,Argentina<br>
+            email@TMS.com<br>
+        </address>
+    </aside>
+        <p class="footer-bar">&copy;2017 All Rights Reserved | Site Title | <span id="currentdate">Current Date Placeholder</span></p>
+            
+</footer>
+        <script src="script/scripts.js"></script>
+        <script src="script/currentdate.js"></script>
+</body>
+    <script>
+var urlString = document.location.href;
+var urlArray = urlString.split('/');
+var pageHREF = urlArray[urlArray.length-1];
+    
+if (pageHREF !=="") {
+    var menu = document.querySelectorAll('ul#mainmenu li a');
+var i;
+
+for(i=0; i<menu.length; i++){
+    var currentURL=(menu[i].getAttribute("href"));
+    menu[i].parentNode.className="";
+    if(currentURL===pageHREF){
+        menu[i].parentNode.className="active";
+    }
+}
+}
+</script>
+</html>
