@@ -28,12 +28,6 @@
         }
  
 
-/* ---------GALLERY HERE --------*/ 
-div.weatherGallery {
-        display: grid;
-  		grid-template-columns: repeat(2, 1fr);
-		grid-gap:2%;
-	}
     /*-------------Images---------*/
     .first, .second, .third {
 	width: 26.6%;
@@ -54,6 +48,9 @@ div.weatherGallery {
     margin-top: 2%;
 }
 /* ---------FOTTER HERE --------*/ 
+    footer.Fadven{
+    margin-top: 240%;
+}
 footer {
     font-size: 15px;
     background-color: #AFE818;

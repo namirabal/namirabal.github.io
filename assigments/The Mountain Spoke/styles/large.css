@@ -57,13 +57,10 @@
     color: aliceblue;
 }
 
-/* ---------GALLERY HERE --------*/ 
-div.weatherGallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-	}
-
-/* ---------FOTTER HERE --------*/ 
+/* ---------FOOTER HERE --------*/ 
+footer.Fadven{
+    margin-top: 180%;
+}
 footer {
     font-size: 15px;
     background-color: #AFE818;
